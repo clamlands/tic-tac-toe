@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+    font-family: sans-serif;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 100px 100px 900px;
+}
+
+.win{
+    font-size: 40px;
+    place-self: center;
+}
+
+.hud{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: end;
+}
+
+.p1, .p2{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.reset{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.reset:hover{
+    background-color: rgb(201, 201, 201);
+}
+
+.gameboard{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px;
+    background-color: black;
+    border: 5px solid black;
+    gap: 5px;
+}
+
+.tile{
+    font-size: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
