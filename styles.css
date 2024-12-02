@@ -2,6 +2,7 @@ body{
     margin: 0;
     user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
     font-family: sans-serif;
+    min-height: 100vh;
 }
 
 .container{
