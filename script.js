@@ -145,6 +145,7 @@ const gameFlow = (() => {
 
   resetButton.addEventListener("click", () => {
     resetButton.textContent = "Reset Game";
+    resetButton.style.borderColor = "black";
     gameboard.reset();
     done = false;
     move = 1;
