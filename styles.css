@@ -78,7 +78,7 @@ h1{
 /*----------DESKTOP----------*/
 @media (min-width: 768px){
     .gameboard{
-        width: 40vw;
-        height: 40vw;
+        width: 22vw;
+        height: 22vw;
     }
 }
