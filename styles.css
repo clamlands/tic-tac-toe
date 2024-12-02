@@ -5,16 +5,42 @@ body{
 }
 
 .container{
-    height: 100vh;
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
-    grid-template-rows: 100px 100px 900px;
+    flex-direction: column;
+}
+
+.gameboard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: black;
+    border: 5px solid black;
+    gap: 5px;
+    margin-top: 20px;
+    width: 90vw;
+    height: 90vw;
+}
+
+.tile{
+    font-size: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.tile:hover{
+    background-color: rgb(214, 214, 214);
 }
 
 .win{
     font-size: 40px;
     place-self: center;
+    margin-bottom: 20px;
+    visibility: hidden;
 }
 
 .hud{
@@ -31,28 +57,28 @@ body{
 }
 
 .reset{
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 10px;
     padding: 5px 10px;
+    transition: .2s;
 }
 
 .reset:hover{
-    background-color: rgb(201, 201, 201);
+    border-color: red;
 }
 
-.gameboard{
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 300px 300px 300px;
-    background-color: black;
-    border: 5px solid black;
-    gap: 5px;
+
+
+h1{
+    text-align: center;
+    font-size: 70px;
+    margin: 20px 0;
 }
 
-.tile{
-    font-size: 100px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/*----------DESKTOP----------*/
+@media (min-width: 768px){
+    .gameboard{
+        width: 40vw;
+        height: 40vw;
+    }
 }
